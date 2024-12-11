@@ -13,7 +13,7 @@ function setup() {
       particles.push(new particle(random(0,width),random(0,height)))
     }
   
-   
+    windowResized();
   rectMode(CENTER);
   angleMode(DEGREES);
   numShapes=15;
@@ -60,4 +60,7 @@ function mySignature()
   fill('white');
   text('Asher Borison',width-145,height-20)
   
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
